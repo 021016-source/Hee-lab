@@ -1,12 +1,18 @@
 body{
 font-family: Arial, sans-serif;
-background:#f5f6f7;
+background:#f4f6f8;
 margin:0;
 }
 
-h1{
+header{
 text-align:center;
-padding:30px;
+padding:40px;
+background:white;
+border-bottom:1px solid #ddd;
+}
+
+header h1{
+margin:0;
 }
 
 .grid{
@@ -18,11 +24,11 @@ padding:30px;
 
 .card{
 background:white;
-border-radius:12px;
+border-radius:10px;
 overflow:hidden;
 text-decoration:none;
 color:black;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
 }
 
 .card img{
