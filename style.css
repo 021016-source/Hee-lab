@@ -132,3 +132,8 @@ font-size:14px;
 color:#666;
 margin-top:8px;
 }
+
+.post-container img{
+max-width:100%;
+height:auto;
+}
