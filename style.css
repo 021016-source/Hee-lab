@@ -79,3 +79,40 @@ font-size:18px;
 padding:0 10px 15px;
 color:#666;
 }
+
+/* 게시글 본문 영역 */
+.post-container{
+max-width:800px;
+margin:50px auto;
+background:white;
+padding:40px;
+border-radius:12px;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+line-height:1.8; /* 한글은 줄간격 넓히기 */
+}
+
+/* 큰 제목 */
+.post-container h2{
+margin-top:40px;
+font-size:22px;
+}
+
+/* 소제목 */
+.post-container h3{
+margin-top:25px;
+font-size:18px;
+color:#2c7be5;
+}
+
+/* 본문 */
+.post-container p{
+margin:16px 0;
+font-size:16px; /* 한글은 살짝 크게 */
+}
+
+/* 구분선 */
+.post-container hr{
+margin:40px 0;
+border:none;
+border-top:1px solid #ddd;
+}
