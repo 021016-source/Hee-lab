@@ -19,20 +19,24 @@
 <button>Search</button>
 </div>
 
-<section class="grid">
-
-<a href="posts/centaur-biomechanics.html" class="card">
-
-<img src="images/centaur-main.jpg">
-
-<h2>켄타우로스 구조역학 분석</h2>
-
-<p>골격 및 신경계 통합 문제에 대한 의생명학적 접근</p>
-
-</a>
-
+<!-- 최근 게시물 -->
+<section class="recent-section">
+  <h2>Recent</h2>
+  <div class="recent-container" id="recentContainer"></div>
 </section>
 
-</body>
+<!-- 카테고리 -->
+<section class="category-section">
+  <div class="categories">
+    <button onclick="filterCategory('all')">All</button>
+    <button onclick="filterCategory('bio')">의생명</button>
+    <button onclick="filterCategory('math')">수학</button>
+    <button onclick="filterCategory('science')">과학</button>
+    <button onclick="filterCategory('social')">사회</button>
+  </div>
+</section>
 
-</html>
+<!-- 게시물 -->
+<section class="posts-section">
+  <div id="postsContainer"></div>
+</section>
