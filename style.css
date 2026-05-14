@@ -7,9 +7,11 @@ color: #111;
 
 /* 배너 */
 header {
-text-align: center;
-padding: 60px 20px 20px;
+text-align:center;
+padding:100px 20px 80px;
+background:#f5f7fa;
 }
+
 
 header h1 {
 font-size: 36px;
@@ -156,5 +158,17 @@ transition:0.2s;
 .search-box button:hover{
 
 background:#333;
+
+}
+
+.section-divider{
+
+width:90%;
+
+height:1px;
+
+background:#ddd;
+
+margin:50px auto;
 
 }
