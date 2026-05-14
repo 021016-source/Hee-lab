@@ -126,6 +126,7 @@ Search
 
 <!-- 최근 -->
 
+<div class="section-divider"></div>
 <section class="recent-section">
 <h2>Recent</h2>
 <div class="recent-container" id="recentContainer"></div>
@@ -215,14 +216,36 @@ function renderRecent() {
 }
 
 // 검색
-document.getElementById("searchInput").addEventListener("input", function() {
-  const keyword = this.value.toLowerCase();
-  const filtered = posts.filter(p => 
-    p.title.toLowerCase().includes(keyword) ||
-    p.content.toLowerCase().includes(keyword)
-  );
-  renderPosts(filtered);
-});
+// 검색 버튼 기능
+function searchPosts(){
+
+const keyword = document
+.getElementById("searchInput")
+.value
+.toLowerCase();
+
+const filtered = posts
+
+.filter(p =>
+
+p.title.toLowerCase().includes(keyword)
+
+||
+
+p.content.toLowerCase().includes(keyword)
+
+)
+
+.sort((a,b)=>
+
+b.date.localeCompare(a.date)
+
+);
+
+renderPosts(filtered);
+
+}
+
 
 // 실행
 renderPosts(posts);
